@@ -1,5 +1,6 @@
 import { state } from "./state";
 
+
 (function () {
     state.init();
     state.setEmailAndFullName("nacho@apxschool","Ignacio Alderete");

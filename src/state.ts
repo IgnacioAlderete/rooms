@@ -1,9 +1,10 @@
 const API_BASE_URL ="http://localhost:3000";
 import {rtdb} from "./rtdb";
 import { getDatabase, ref , onValue} from 'firebase/database';
-import map from "lodash/map";
+import lodashMap from "lodash/map";
 
-const map = new Map();
+const myMap = new Map();
+
 
 const state = {
 	data: {
@@ -139,8 +140,10 @@ listenRoom(){
 }, 
 
 };
-map.forEach((value, key) => {
+myMap.forEach((value, key) => {
     console.log(`${key}: ${value}`);
 });
+
+
 
 	export {state};
